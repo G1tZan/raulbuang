@@ -1,4 +1,4 @@
-body {
+ body {
   min-height: 100vh;
   min-width: 100vh;
   background-color: rgb(37, 15, 15);
@@ -76,30 +76,24 @@ fieldset {
   font-size: 28px; 
 }
 
- .field {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      grid-gap: 10px;
-      justify-items: center;
-    }
+.field {
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 140px);
+  grid-template-rows: repeat(3, calc(140px / 2 * 3));
+}
 
-    .card {
-      width: 100px; /* Adjust card size as needed */
-      height: 150px; /* Adjust card size as needed */
-      border: 1px solid black; /* Add border or styles */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 10px;
+  background-color: #9A7B4F;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
 
-    .top-row {
-      grid-row: 1; /* Cards in top row */
-    }
-
-    .bottom-row {
-      grid-row: 2; /* Cards in bottom row */
-    }
 .front-image {
   width: 60px;
   height: 60px;
@@ -125,7 +119,3 @@ fieldset {
   font-family: myFont;
   src: url(Am.ttf);
 }
-
-
-
-
