@@ -1,0 +1,125 @@
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: rgb(37, 15, 15);
+  color: white;
+  background-image: url('BGP.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  
+  
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 120px;
+    color: beige;
+    font-family: myfont;
+       
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 10px 30px;
+  font-size: 35px;
+  border-radius: 20px;
+  background-color: #9A7B4F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px; 
+  font-family: myFont;
+}
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+ 
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+  background-image: url('img.jpg');
+}
+
+.card .front {
+  transform: rotateY(180deg);
+}
+fieldset {
+ 
+  padding: 4px;
+  border: 4px solid #9A7B4F; 
+  border-radius: 5px;
+  width: 300px;
+  height: 64px;
+  margin: 0 auto;
+  
+}
+
+.buttons p {
+  margin: 0;
+  font-size: 28px; 
+}
+
+.field {
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 140px);
+  grid-template-rows: repeat(3, calc(140px / 2 * 3));
+}
+
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 10px;
+  background-color: #9A7B4F;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+  width: 60px;
+  height: 60px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+   
+    
+}
+@font-face {
+  font-family: myFont;
+  src: url(Am.ttf);
+}
+
+
+
+
