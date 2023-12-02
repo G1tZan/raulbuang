@@ -1,9 +1,11 @@
- const gridContainer = document.querySelector(".field");
+const gridContainer = document.querySelector(".field");
     let cards = [
-      { "name": "card1", "image": "path_to_image1.jpg" },
-      { "name": "card2", "image": "path_to_image2.jpg" },
-      { "name": "card3", "image": "path_to_image3.jpg" },
-      { "name": "card4", "image": "path_to_image4.jpg" }
+      { "name": "heart", "image": "heart.png" },
+      { "name": "diamond", "image": "diamond.png" },
+      { "name": "clove", "image": "clove.png" },
+      { "name": "spade", "image": "spade.png" },
+      { "name": "queen", "image": "queen.png" },
+      { "name": "king", "image": "king.png" }
       // Add more card objects as needed
     ];
     let firstCard, secondCard;
