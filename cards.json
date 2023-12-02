@@ -1,0 +1,26 @@
+[
+    {
+        "image": "../assets/clove.png",
+        "name": "clove"
+    },
+    {
+        "image": "../assets/spade.png",
+        "name": "spade"
+    },
+    {
+        "image": "../assets/heart.png",
+        "name": "heart"
+    },
+    {
+        "image": "../assets/king.png",
+        "name": "king"
+    },
+    {
+        "image": "../assets/queen.png",
+        "name": "queen"
+    },
+    {
+        "image": "../assets/diamond.png",
+        "name": "diamond"
+    }
+]
