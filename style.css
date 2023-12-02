@@ -76,7 +76,7 @@ fieldset {
   font-size: 28px; 
 }
 
-.field {
+ .field {
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* 3 columns */
       grid-gap: 10px;
@@ -93,6 +93,13 @@ fieldset {
       cursor: pointer;
     }
 
+    .top-row {
+      grid-row: 1; /* Cards in top row */
+    }
+
+    .bottom-row {
+      grid-row: 2; /* Cards in bottom row */
+    }
 .front-image {
   width: 60px;
   height: 60px;
