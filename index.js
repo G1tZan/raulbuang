@@ -31,15 +31,12 @@ const gridContainer = document.querySelector(".field");
     }
 
     function generateCards() {
-      for (let card of cards) {
+      for (let i = 0; i < 9; i++) { // Adjust to match the number of cards needed
         const cardElement = document.createElement("div");
         cardElement.classList.add("card");
-        cardElement.setAttribute("data-name", card.name);
+        cardElement.setAttribute("data-name", cards[i % cards.length].name);
         cardElement.innerHTML = `
-          <div class="front">
-            <img class="front-image" src=${card.image} />
-          </div>
-          <div class="back"></div>
+          <img class="front-image" src=${cards[i % cards.length].image} />
         `;
         gridContainer.appendChild(cardElement);
         cardElement.addEventListener("click", flipCard);
